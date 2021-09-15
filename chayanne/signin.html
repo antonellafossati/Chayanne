@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="signin">
+	<h1>Registrate</h1>
+	<form action="signin.php" method="post">
+		<label>
+			<input type="text" name="first_name" placeholder="Nombre" required>
+		</label>
+
+		<label>
+			<input type="text" name="last_name" placeholder="Apellido" required>
+		</label>
+
+		<label>Fecha de nacimiento
+			<input type="date" name="date_of_birth" required>
+		</label>
+
+		<label>
+			<input type="email" name="email" placeholder="Email" required>
+		</label>
+
+		<label>Signo
+			<select name="zodiac_sign" required>
+				<option value="1">Aries</option>
+				<option value="2">Tauro</option>
+				<option value="3">Géminis</option>
+				<option value="4">Cáncer</option>
+				<option value="5">Leo</option>
+				<option value="6">Virgo</option>
+				<option value="7">Libra</option>
+				<option value="8">Escorpio</option>
+				<option value="9">Sagitario</option>
+				<option value="10">Capricornio</option>
+				<option value="11">Acuario</option>
+				<option value="12">Piscis</option>
+			</select>
+		</label>
+
+		<label>
+			<input type="text" name="song" placeholder="Canción favorita de Chayanne" required>
+		</label>
+
+		<label>
+			<input type="text" name="user_name" placeholder="Nombre de usuarie" required>
+		</label>
+
+		<label>
+			<input type="password" name="password" placeholder="Contraseña" required>
+		</label>
+
+		<p>¿Querés recibir material semanal de Chayanne por mail?</p>
+		<label>Sí
+			<input type="radio" id="si" name="notifications" value="yes" checked>
+		</label>
+		<label>No
+			<input type="radio" id="no" name="notifications" value="no">
+		</label><br>
+
+		<label>Dejale un mensajito a Chayanne
+			<textarea name="comments" placeholder="Querido Chayanne..."></textarea>
+		</label>
+
+		<label for="acepto">Acepto términos y condiciones
+			<input type="checkbox" name="accepts_terms" value="yes">
+		</label>
+
+		<button type="submit">Crear Cuenta</button>
+	</form>
+</body>
+
+</html>
