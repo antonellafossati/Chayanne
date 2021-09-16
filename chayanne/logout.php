@@ -12,10 +12,11 @@ session_unset();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cerraste sesión</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="volver">
     <h1> Y ahora tu te vas... </h1>
-    <h2> Cerraste sesión exitosamente </h2>
+    <p> Cerraste sesión exitosamente </p>
     <a href="index.html">Volver</a>
 </body>
 </html>
