@@ -67,5 +67,5 @@ if (
 if ($error) {
     header ('Location: error.html');
 } else {
-    header ('Location: login.php');
+    header ('Location: login.html');
 }   
