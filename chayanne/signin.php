@@ -40,7 +40,7 @@ if (
     ! empty ($comments) && is_string ($comments)
 )
 { 
-    $connection->query(
+    $result = $connection->query(
         "INSERT INTO `usuaries` (`first_name`, `last_name`, `date_of_birth`, `email`, `zodiac_sign`, 
         `song`, `user_name`, `password`, `notifications`, `comments`) 
         VALUES ( 
@@ -56,16 +56,10 @@ if (
         '" . $connection -> real_escape_string ( $comments ) . "'
         );"
     );
-
-    if ($result === false){
-        $error = true;
-    }
-} else {
-    echo 'Registro incorrecto';
 }
 
-if ($error) {
-    header ('Location: error.html');
-} else {
+if (! empty($result)) {
     header ('Location: login.html');
-}   
+} else {
+    header ('Location: error.html');
+}
